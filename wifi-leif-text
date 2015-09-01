@@ -52,7 +52,7 @@ nmcli d wifi list &&
 echo "$D" &&
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 2|rescan|Rescan|rescan,|RESCAN)
 echo ""
@@ -64,7 +64,7 @@ echo "$G""Scanning is completted""$D"
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 3|on|On|on,|ON)
 echo ""
@@ -76,7 +76,7 @@ nmcli r wifi &&
 echo "$D" &&
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 4|off|Off|off,|OFF)
 echo ""
@@ -88,7 +88,7 @@ nmcli r wifi &&
 echo "$D" &&
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 
 5|status|Status|status,|STATUS)
@@ -101,7 +101,7 @@ echo ""
 echo "$B""$bold"'Please write in '"$R"'wifi DEVICE'"$B"' (see info above)'"$D"
 echo ""
 read wifi
-if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif-text ; fi &&
 echo ""
 echo ""
 echo "$B""$bold"Wifi status on $wifi:"$D"
@@ -114,7 +114,7 @@ wifi
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 6|connect|Connect|connect,|CONNECT)
 echo ""
@@ -135,7 +135,7 @@ echo ""
 read wifi &&
 echo ""
 
-if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif-text ; fi &&
 
 
 echo "$bold"
@@ -145,17 +145,17 @@ echo ""
 echo "$B"'Please write in '"$R"'accses name(WiFi-SSID)'"$B"' the wifi you want to connect to'"$D"
 echo ""
 read WiFiSSID
-if [[ "$WiFiSSID" == "back" || "$WiFiSSID" == "exit" || "$WiFiSSID" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$WiFiSSID" == "back" || "$WiFiSSID" == "exit" || "$WiFiSSID" == "" ]] ; then wifi-leif-text ; fi &&
 echo ""
 echo "$B""$bold"'Please Write in '"$R"'password'"$B"' for the wifi'"$D"
 echo ""
 read WiFipassword &&
-if [[ "$WiFipassword" == "back" || "$WiFipassword" == "exit" ]] ; then wifi-leif ; fi &&
+if [[ "$WiFipassword" == "back" || "$WiFipassword" == "exit" ]] ; then wifi-leif-text ; fi &&
 nmcli d wifi connect $WiFiSSID password $WiFipassword iface $wifi &&
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif
+wifi-leif-text
 ;;
 
 7|disconnect|Disconnect|disconnect,|DISCONNECT)
@@ -169,7 +169,7 @@ echo "$B""$bold"'Plese write in '"$R"'wifi DEVICE'"$B"' (see info above)'"$D"
 echo ""
 read wifi
 
-if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$wifi" == "back" || "$wifi" == "exit" || "$wifi" == "" ]] ; then wifi-leif-text ; fi &&
 
 echo ""
 echo ""
@@ -180,7 +180,7 @@ echo ""
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 8|ip-local|IP-LOCAL|Ip-local|ip-local,)
 echo ""
@@ -192,7 +192,7 @@ echo ""
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 
 9|ip-public|IP-PUBLIC|Ip-Public|ip-public,)
@@ -206,7 +206,7 @@ echo "$D"
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 
 10|ping|Ping|ping,|PING)
@@ -218,18 +218,18 @@ echo ""
 read ip
 echo ""
 
-if [[ "$ip" == "back" || "$ip" == "exit" || "$ip" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$ip" == "back" || "$ip" == "exit" || "$ip" == "" ]] ; then wifi-leif-text ; fi &&
 
 echo ""
 echo "$B""$bold"'how many times do you want to ping?'"$D"
 read num
-if [[ "$um" == "back" || "$num" == "exit" || "$num" == "" ]] ; then wifi-leif ; fi &&
+if [[ "$um" == "back" || "$num" == "exit" || "$num" == "" ]] ; then wifi-leif-text ; fi &&
 ping -c$num $ip
 echo ""
 echo ""
 echo "$B""$bold"press enter to continue..."$D"
 read yes &&
-wifi-leif ;;
+wifi-leif-text ;;
 
 11|exit|Exit|exit,EXIT)
 echo ""
@@ -250,6 +250,6 @@ echo ""
 echo "$R""$bold"'ME DONT KNOW NOTHING!'"$D"
 echo ""
 sleep 3
-wifi-leif ;;
+wifi-leif-text ;;
 
 esac
