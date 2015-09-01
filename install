@@ -152,12 +152,10 @@ echo "$B""$bold"'What version of '"$G"'WiFi-leif'"$B"' do you want? defult=1'""
 echo "" 
 echo "$G"'1 = GUI (wifi-leif will launch gui version)'""
 echo "2 = TEXT (wifi-leif will launch text version)"
-echo ""
-echo "$R""3 = BOTH, GUI AS DEFULT(wifi-leif-text to launch text version)"
+echo "3 = BOTH, GUI AS DEFULT(wifi-leif-text to launch text version)"
 echo "4 = BOTH, TEXT AS DEFULT(wifi-leif-gui to launch gui version)"
 echo ""'5 = BOTH, NON AS DEFULT(wifi-leif-text / wifi-leif-gui)'"$D"
 echo ""
-echo "$R""$bold""Warning text in red not working for now.. still under testing...""$D"
 echo "" 
 read ans
 echo ""
@@ -175,9 +173,12 @@ chmod +x wifi-leif-logo &&
 chmod +x wifi-leif-text &&
 chmod +x wifi-leif-gui &&
 chmod +x wifi-leif-logo-gui &&
+chmod +x wifi-leif &&
+echo "wifi-leif-gui" >> ~/bash/wifi-leif/wifi-leif &&
+sudo cp wifi-leif /usr/local/bin &&
 sudo cp wifi-leif-logo /usr/local/bin &&
 sudo cp wifi-leif-logo-gui /usr/local/bin &&
-sudo cp wifi-leif-gui /usr/local/bin/wifi-leif &&
+sudo cp wifi-leif-gui /usr/local/bin &&
 sudo cp man-wifi-leif wifi-leif.1 &&
 gzip wifi-leif.1 &&
 sudo mv wifi-leif.1.gz /usr/share/man/man1 &&
@@ -198,9 +199,12 @@ chmod +x wifi-leif-logo &&
 chmod +x wifi-leif-text &&
 chmod +x wifi-leif-gui &&
 chmod +x wifi-leif-logo-gui &&
+chmod +x wifi-leif &&
+echo "wifi-leif-text" >> ~/bash/wifi-leif/wifi-leif &&
+sudo cp wifi-leif /usr/local/bin &&
 sudo cp wifi-leif-logo /usr/local/bin &&
 sudo cp wifi-leif-logo-gui /usr/local/bin &&
-sudo cp wifi-leif-text /usr/local/bin/wifi-leif &&
+sudo cp wifi-leif-text /usr/local/bin &&
 sudo cp man-wifi-leif wifi-leif.1 &&
 gzip wifi-leif.1 &&
 sudo mv wifi-leif.1.gz /usr/share/man/man1 &&
@@ -219,9 +223,12 @@ chmod +x wifi-leif-logo &&
 chmod +x wifi-leif-text &&
 chmod +x wifi-leif-gui &&
 chmod +x wifi-leif-logo-gui &&
+chmod +x wifi-leif &&
+echo "wifi-leif-gui" >> ~/bash/wifi-leif/wifi-leif &&
+sudo cp wifi-leif /usr/local/bin &&
 sudo cp wifi-leif-logo /usr/local/bin &&
 sudo cp wifi-leif-logo-gui /usr/local/bin &&
-sudo cp wifi-leif-gui /usr/local/bin/wifi-leif &&
+sudo cp wifi-leif-gui /usr/local/bin/wifi-leif-gui &&
 sudo cp wifi-leif-text /usr/local/bin/wifi-leif-text &&
 sudo cp man-wifi-leif wifi-leif.1 &&
 gzip wifi-leif.1 &&
@@ -241,10 +248,13 @@ chmod +x wifi-leif-logo &&
 chmod +x wifi-leif-text &&
 chmod +x wifi-leif-gui &&
 chmod +x wifi-leif-logo-gui &&
+chmod +x wifi-leif &&
+echo "wifi-leif-text" >> ~/bash/wifi-leif/wifi-leif &&
+sudo cp wifi-leif /usr/local/bin &&
 sudo cp wifi-leif-logo /usr/local/bin &&
 sudo cp wifi-leif-logo-gui /usr/local/bin &&
 sudo cp wifi-leif-gui /usr/local/bin/wifi-leif-gui &&
-sudo cp wifi-leif-text /usr/local/bin/wifi-leif &&
+sudo cp wifi-leif-text /usr/local/bin/wifi-leif-text &&
 sudo cp man-wifi-leif wifi-leif.1 &&
 gzip wifi-leif.1 &&
 sudo mv wifi-leif.1.gz /usr/share/man/man1 &&
