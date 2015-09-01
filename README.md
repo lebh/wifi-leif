@@ -5,6 +5,8 @@ only for archlinux at the moment
 
 #description:
 
+  This is only a project put togheter to learn more about bash.
+
   wifi-leif will only work on archlinux
 
   wifi-leif is there to help out with configuring a wifi network with NetworkManager.
