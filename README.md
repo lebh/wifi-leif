@@ -54,7 +54,7 @@ after installation launch it by opning terminal and enter ```wifi-leif```
 
 #screenshot
 
-##Gui version
+####Gui version
 http://i.imgur.com/WoSDPrx.png
-##Text version
+####Text version
 http://i.imgur.com/LzR8wmM.png
