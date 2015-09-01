@@ -13,14 +13,23 @@ wifi-leif Is to help wifi users, out with NetworkManager command line.
 
 #Installation
 cd
+
 mkdir -p bash
+
 cd bash/
+
 wget https://github.com/lebh/wifi-leif/archive/master.zip
+
 unzip master.zip
+
 sudo mv wifi-leif-master/ wifi-leif
+
 cd wifi-leif
+
 chmod +x install
+
 ./install
+
 
 just follow the installation..
 
