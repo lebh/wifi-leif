@@ -26,7 +26,7 @@ only for archlinux at the moment
 
 #Installation
 ```
-cd
+cd ~
 
 mkdir -p bash
 
@@ -38,7 +38,7 @@ unzip master.zip
 
 sudo mv wifi-leif-master/ wifi-leif
 
-cd wifi-leif
+cd wifi-leif/
 
 chmod +x install
 
