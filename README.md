@@ -2,7 +2,8 @@
 wifi-leif Is to help wifi users, out with NetworkManager command line.
 
 
-description:
+#description:
+
   wifi-leif is there to help out with configuring a wifi network with NetworkManager.
   wifi-leif will only work if NetworkManager is installed.
   If wifi-leif-gui version is used then dialog need to  be installed.
