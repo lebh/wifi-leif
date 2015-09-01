@@ -48,7 +48,7 @@ chmod +x install
 just follow the installation..
 
 
-after installation launch it by opning terminal and enter wifi-leif
+after installation launch it by opning terminal and enter ```wifi-leif```
 
 
 
