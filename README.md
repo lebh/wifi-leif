@@ -25,7 +25,7 @@ only for archlinux at the moment
   
 
 #Installation
-`
+```
 cd
 
 mkdir -p bash
@@ -43,7 +43,7 @@ cd wifi-leif
 chmod +x install
 
 ./install
-`
+```
 
 just follow the installation..
 
