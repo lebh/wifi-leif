@@ -4,6 +4,8 @@ wifi-leif Is to help wifi users, out with NetworkManager command line.
 
 #description:
 
+  wifi-leif will only work on archlinux
+
   wifi-leif is there to help out with configuring a wifi network with NetworkManager.
   
   wifi-leif will only work if NetworkManager is installed.
