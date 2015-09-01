@@ -10,3 +10,23 @@ wifi-leif Is to help wifi users, out with NetworkManager command line.
   Should have every command listed when the bash script is launched.
   Mostly used for connecting/disconnecting wifi accses points.
   Can also be used to find IP, ping, list availble accses points, rescan, and show wifi status.   
+
+#Installation
+cd
+mkdir -p bash
+cd bash/
+wget https://github.com/lebh/wifi-leif/archive/master.zip
+unzip master.zip
+sudo mv wifi-leif-master/ wifi-leif
+cd wifi-leif
+chmod +x install
+./install
+
+just follow the installation..
+
+#screenshot
+
+#Gui version
+http://i.imgur.com/WoSDPrx.png
+#Text version
+http://i.imgur.com/LzR8wmM.png
